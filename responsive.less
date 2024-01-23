@@ -1,0 +1,23 @@
+@import 'mixins';
+@import 'variables';
+
+.container {
+  .tablet({
+    max-width: 80%;
+  });
+}
+
+.products {
+  .tablet({
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  });
+
+  .mobile({
+    display: block;
+
+    .product-item {
+      margin-bottom: 32px;
+    }
+  });
+}
